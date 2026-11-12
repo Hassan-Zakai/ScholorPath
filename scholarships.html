@@ -1,0 +1,167 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ScholarPath | Scholarships</title>
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+
+        <div class="logo">
+            <h1>ScholarPath</h1>
+        </div>
+
+        <!-- Navigation -->
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="scholarships.html">Scholarships</a>
+            <a href="universities.html">Universities</a>
+            <a href="admission.html">Admissions</a>
+        </nav>
+
+    </header>
+
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Hero Section -->
+        <section class="hero">
+
+            <h2>Discover Your Future</h2>
+
+            <p>
+                Find scholarships, explore opportunities,
+                and take the next step towards your education.
+            </p>
+
+            <a href="#scholarship-list">Explore Scholarships</a>
+
+        </section>
+
+
+        <!-- Scholarship Section -->
+        <section class="scholarship-section" id="scholarship-list">
+
+            <h2>Available Scholarships</h2>
+
+            <p>
+                Search and discover scholarships that match your goals.
+            </p>
+
+
+            <!-- Search Bar -->
+            <input
+                type="search"
+                id="search-input"
+                placeholder="Search scholarships..."
+            >
+
+
+            <!-- Filters -->
+            <div class="filters">
+
+                <select id="level-filter">
+                    <option value="">All Study Levels</option>
+                    <option value="Undergraduate">Undergraduate</option>
+                    <option value="Master's">Master's</option>
+                    <option value="PhD">PhD</option>
+                </select>
+
+                <select id="country-filter">
+                    <option value="">All Countries</option>
+                </select>
+
+                <select id="field-filter">
+                    <option value="">All Fields</option>
+                </select>
+
+                <button id="reset-filters">
+                    Reset Filters
+                </button>
+
+            </div>
+
+
+            <!-- Results Count -->
+            <div class="results">
+
+                <p id="showing-text">
+                    Showing all opportunities
+                </p>
+
+                <p>
+                    Total Scholarships:
+                    <strong id="result-count">0</strong>
+                </p>
+
+            </div>
+
+
+            <!-- Scholarship Cards -->
+            <div
+                class="scholarship-cards"
+                id="scholarship-cards">
+            </div>
+
+
+            <!-- Show More Button -->
+            <div class="load-more-container">
+
+                <button id="load-more">
+                    Show More
+                </button>
+
+            </div>
+
+
+            <!-- Empty State -->
+            <div id="empty-state" hidden>
+
+                <h3>No Scholarships Found</h3>
+
+                <p>
+                    Try changing your search or filters.
+                </p>
+
+                <button id="empty-reset">
+                    Clear Filters
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <h2>ScholarPath</h2>
+
+        <p>
+            Explore Opportunities. Plan Your Future.
+        </p>
+
+        <p>Student Project</p>
+
+    </footer>
+
+
+    <!-- JavaScript File -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
